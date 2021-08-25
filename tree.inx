@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Дерево</name>
+    <id>math.tree</id>
+	<label>Общие параметры</label>
+		<param name="depth" type="int" min="1" max="100" gui-text="Глубина рекурсии:">5</param>
+	<label>Параметры веток</label>
+    		<param name="length" type="float" min="0.01" max="10000" gui-text="Начальная длина:">100.0</param>
+    		<param name="width" type="float" min="0.01" max="10000" gui-text="Начальная ширина:">10.0</param>
+    		<param name="nbranches" type="int" min="1" max="10" gui-text="Макс. кол-во:">2</param>
+		<param name="branches" type="string" gui-text="Цвет:">111111</param>
+	<label>Параметры листьев</label>
+   		 <param name="nleaves" type="int" min="0" max="10" gui-text="Макс. кол-во:">2</param>
+		 <param name="radius" type="float" min="0.01" max="100" gui-text="Макс. размер:">10.0</param>
+   		 <param name="leaves" type="string" gui-text="Цвет листьев:">AAAAAA</param>
+   		 
+
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Мои расширения"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">tree.py</command>
+    </script>
+</inkscape-extension>

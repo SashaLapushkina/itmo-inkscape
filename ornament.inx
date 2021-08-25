@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Орнамент</name>
+    <id>math.triangle</id>
+    <param name="width" type="float" min="0.01" max="10000" gui-text="Ширина:">100.0</param>
+    <param name="height" type="float" min="0.01" max="10000" gui-text="Высота:">100.0</param>
+    <param name="replay" type="int" min="1" max="300" gui-text="Повторы:">5</param>
+
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu name="Мои расширения"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">ornament.py</command>
+    </script>
+</inkscape-extension>
